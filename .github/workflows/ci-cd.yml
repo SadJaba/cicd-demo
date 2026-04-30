@@ -31,7 +31,6 @@ jobs:
           name: app-jar
           path: build/libs/*.jar
   test:
-    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code

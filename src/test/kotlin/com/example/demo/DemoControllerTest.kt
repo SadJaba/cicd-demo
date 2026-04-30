@@ -21,6 +21,6 @@ class DemoControllerTest {
     fun shouldReturnHelloMessage() {
         mockMvc.perform(get("/hello"))
             .andExpect(status().isOk)
-            .andExpect(content().string("Hello!!!"))
+            .andExpect(content().string("Hello World"))
     }
 }
